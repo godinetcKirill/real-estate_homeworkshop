@@ -1,0 +1,43 @@
+.test-container {
+    width: 1430px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    margin: -15px;
+}
+.flex-element {
+   /* width: calc(( 100% - 60px) / 3);
+   margin-right: 30px;
+   margin-bottom: 30px; */
+   width:380px;
+   margin: 15px;
+    background-color: darkkhaki;
+  
+   
+}
+/* .flex-element:nth-child(3n){
+margin-right: 0px;
+} */
+/* calc
+100% -Х значення маржину/на кількість елементів в рядку  */
+  /* width: calc(( 100% - 90px) / 4); */
+
+
+
+
+/* .flex-element:nth-last-child(-n+3){
+    margin-bottom: 0px;
+} */
+/* alternative */
+/* .flex-element:not(:nth-child(3n)){
+     margin-right: 45px;
+}
+.flex-element:not(:nth-last-child(-n+3)){
+  margin-bottom: 45px;
+} */
