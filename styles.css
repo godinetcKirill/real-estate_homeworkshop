@@ -253,8 +253,8 @@ body {
   letter-spacing: 0.01em;
   transition: all 350ms linear;
 }
-.content-main-block__button:hover{
-    background-color: #c43627;
+.content-main-block__button:hover {
+  background-color: #c43627;
 }
 
 .body-main-block__slider {
@@ -530,14 +530,14 @@ display: none;
   padding-top: 110px;
   padding-bottom: 110px;
 }
-@media screen and (max-width: 990.98px){
- .deals {
+@media screen and (max-width: 990.98px) {
+  .deals {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 }
 @media screen and (max-width: 767.98px) {
-deals {
+  .deals {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -590,115 +590,276 @@ deals {
   border-radius: 5px;
   transition: background-color 300ms ease-in;
 }
-@media screen and (max-width:767.98px){
-    .header-deals__link {
-       width: 100%;
-    }
+@media screen and (max-width: 767.98px) {
+  .header-deals__link {
+    width: 100%;
+  }
 }
-.header-deals__link:hover{
-    background-color: #a34237;
+.header-deals__link:hover {
+  background-color: #a34237;
 }
 
 .tabs-deals {
 }
 .tabs-deals__nav {
-    display: flex;
-    column-gap: 50px;
-    row-gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
+  display: flex;
+  column-gap: 50px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
 }
 .tabs-deals__button {
-    font-weight: 400;
-font-size: 19px;
-line-height: 26px;
-color: #000000;
-    background-color: transparent;
-    transition: color 550ms linear;
-    cursor: pointer;
-    position: relative;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26px;
+  color: #000000;
+  background-color: transparent;
+  transition: color 550ms linear;
+  cursor: pointer;
+  position: relative;
 }
-.tabs-deals__button::after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    transition: width 550ms linear;
-    background-color: #F85A47 ;
+.tabs-deals__button::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: width 550ms linear;
+  background-color: #f85a47;
 }
 .tabs-deals__button:hover::after {
-width: 100%;
+  width: 100%;
 }
-.tabs-deals__button:hover{
-    color: #F85A47;
+.tabs-deals__button:hover {
+  color: #f85a47;
 }
 
-.tabs-deals__button.active{
-    color: #F85A47;
+.tabs-deals__button.active {
+  color: #f85a47;
 }
-.tabs-deals__button.active::after{
-    width: 100%;
+.tabs-deals__button.active::after {
+  width: 100%;
 }
 .tabs-deals__body {
 }
 .tabs-deals__item {
-    display:none;
+  display: none;
 }
-.tabs-deals__item.active{
-    display: block;
+.tabs-deals__item.active {
+  display: block;
 }
 
 .item-tabs {
 }
 .item-tabs__items {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 .item-tabs__item {
-    position: relative;
+  position: relative;
 }
 .item-tabs__options {
-    position: absolute;
-    z-index: 100;
-    top: 14px;
-    left: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-
+  position: absolute;
+  z-index: 100;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 .item-tabs__option {
-    background-color: rgba(0, 0, 0, 0.4);
-border: 1px solid #FFFFFF;
-font-size: 12px;
-border-radius: 5px;
-color: #ffff;
-padding: 6px 12px;
-transition: background-color 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffffff;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #ffff;
+  padding: 6px 12px;
+  transition: background-color 300ms ease-in-out;
 }
-.item-tabs__option:hover{
-    background-color: rgba(0, 0, 0, 0.8); 
+.item-tabs__option:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .item-tabs__image {
-    position: relative;
-    padding-bottom: 81%;
-    display: block;
-    border-radius: 5px;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 81%;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
 }
-.item-tabs__image:hover img{
-    transform: scale(1.1);
+.item-tabs__image:hover img {
+  transform: scale(1.1);
 }
-.item-tabs__image img{
-    transition: transform 300ms linear;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
+.item-tabs__image img {
+  transition: transform 300ms linear;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 /* ------------------------------------------------DEALS------------------------------------------------------- */
+
+/* ------------------------------------------------FEATURE-------------------------------------------------------- */
+.featured {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+@media screen and (max-width: 990.98px) {
+  .featured {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .featured {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.featured__container {
+}
+.featured__title {
+  margin-bottom: 95px;
+}
+.featured__body {
+  background-color: #f1ffff;
+  padding: 40px 40px 80px 40px;
+  display: grid;
+  column-gap: 77px;
+  row-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 990.98px) {
+  .featured__body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .featured__title{
+      margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767.98px){
+     .featured__title{
+      margin-bottom: 30px;
+  }
+  .featured__body{
+    margin: 0px -15px;
+   padding: 20px 15px 20px 15px;
+  }
+}
+.featured__images {
+}
+.featured__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.images-featured {
+  display: grid;
+  justify-items: center;
+}
+.images-featured__item {
+}
+.images-featured__item img {
+  max-width: 100%;
+}
+.images-featured__item_mini {
+  margin-left: 20px;
+  margin-right: 20px;
+  filter: drop-shadow(0px 163px 80px rgba(0, 0, 0, 0.04))
+    drop-shadow(0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704))
+    drop-shadow(0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963))
+    drop-shadow(0px 32.6px 13px rgba(0, 0, 0, 0.02))
+    drop-shadow(0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037))
+    drop-shadow(0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963))
+    drop-shadow(48px 58px 44px rgba(0, 0, 0, 0.09));
+  margin-top: -114px;
+}
+
+.content-featured {
+}
+.content-featured__body {
+}
+
+.content-featured__title {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 1.35;
+  color: #000000;
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 767.98px){
+    .content-featured__title{
+        font-size: 24px;
+    }
+}
+.content-featured__text {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.content-featured__options {
+  display: grid;
+  gap: 35px;
+  margin-bottom: 55px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.content-featured__link {
+  background: #f85a47;
+  color: #ffffff;
+  box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07),
+    0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481),
+    0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185),
+    0px 20px 13px rgba(248, 90, 71, 0.035),
+    0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+    0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  border-radius: 5px;
+  transition: all 300ms linear;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  text-transform: uppercase;
+  padding: 16px 35px;
+  display: block;
+  text-align: center;
+}
+.content-featured__link:hover {
+  background: #c94536;
+}
+
+.options-content-featured {
+}
+.options-content-featured__item {
+}
+.options-content-featured__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+
+  margin-bottom: 12px;
+}
+.options-content-featured__value {
+  font-size: 17px;
+}
+@media screen and (min-width: 991px) {
+  .content-featured__body {
+    max-width: 412px;
+    flex: 1 1 auto;
+    padding-top: 40px;
+  }
+  .content-featured__link {
+    max-width: 412px;
+  }
+}
+@media screen and (max-width: 479.98px){
+    .content-featured__options{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 35px;
+    }
+}
+
+/* ------------------------------------------------FEATURE-------------------------------------------------------- */
