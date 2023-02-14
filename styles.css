@@ -737,17 +737,17 @@ display: none;
     display: flex;
     flex-direction: column-reverse;
   }
-  .featured__title{
-      margin-bottom: 50px;
+  .featured__title {
+    margin-bottom: 50px;
   }
 }
-@media screen and (max-width: 767.98px){
-     .featured__title{
-      margin-bottom: 30px;
+@media screen and (max-width: 767.98px) {
+  .featured__title {
+    margin-bottom: 30px;
   }
-  .featured__body{
+  .featured__body {
     margin: 0px -15px;
-   padding: 20px 15px 20px 15px;
+    padding: 20px 15px 20px 15px;
   }
 }
 .featured__images {
@@ -791,10 +791,10 @@ display: none;
   color: #000000;
   margin-bottom: 28px;
 }
-@media screen and (max-width: 767.98px){
-    .content-featured__title{
-        font-size: 24px;
-    }
+@media screen and (max-width: 767.98px) {
+  .content-featured__title {
+    font-size: 24px;
+  }
 }
 .content-featured__text {
   line-height: 1.5;
@@ -855,11 +855,150 @@ display: none;
     max-width: 412px;
   }
 }
-@media screen and (max-width: 479.98px){
-    .content-featured__options{
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 35px;
-    }
+@media screen and (max-width: 479.98px) {
+  .content-featured__options {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 35px;
+  }
 }
 
 /* ------------------------------------------------FEATURE-------------------------------------------------------- */
+
+/* --------------------raiting---------------------- */
+.simple-raiting {
+  position: relative;
+  font-size: 24px;
+  display: inline-block;
+}
+.simple-raiting::before {
+  content: "★★★★★";
+  display: block;
+}
+.simple-raiting__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+.simple-raiting__item {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+.simple-raiting__item:checked,
+.simple-raiting__item:checked ~ .simple-raiting__label {
+  color: #c97a02;
+}
+.simple-raiting__label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #f4e1c5;
+}
+.simple-raiting__label::before {
+  content: "★";
+  display: block;
+}
+.simple-raiting__label:hover,
+.simple-raiting__label:hover ~ .simple-raiting__label,
+.simple-raiting__label:checked ~ .simple-raiting__label:hover {
+  color: #fbb040;
+}
+
+/* --------------------raiting---------------------- */
+
+/* ------------------------Page-Reviews----------------- */
+.reviews {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+@media screen and (max-width: 990.98px) {
+  .reviews {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.reviews__container {
+}
+.reviews__title {
+  margin-bottom: 50px;
+  max-width: 570px;
+}
+
+.reviews__items {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+.reviews__item {
+}
+
+.item-reviews {
+  color: inherit;
+  padding: 50px 40px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  transition: all 300ms ease-in;
+}
+.item-reviews:hover {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
+    0px 20px 13px rgba(0, 0, 0, 0.015),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222),
+    3px 44px 54px rgba(0, 0, 0, 0.08);
+  border-radius: 1px solid transparent;
+}
+.item-reviews__raiting {
+  margin-bottom: 33px;
+}
+
+.item-reviews__text {
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.item-reviews__author {
+}
+
+.author-item-reviews {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+.author-item-reviews__avatar {
+  flex: 0 0 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.author-item-reviews__body {
+}
+.author-item-reviews__name {
+  font-weight: 700;
+  line-height: 22px;
+  color: #333333;
+}
+.author-item-reviews__location {
+    font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #666666;
+}
+
+/* ------------------------Page-Reviews----------------- */
