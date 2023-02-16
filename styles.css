@@ -30,6 +30,7 @@ body {
   height: 100%;
 }
 body {
+  background-color: rgba(105, 105, 105, 0.251);
   line-height: 1;
   font-family: Manrope;
   color: #333333;
